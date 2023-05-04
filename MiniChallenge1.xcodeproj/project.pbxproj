@@ -11,6 +11,7 @@
 		42C9A7592A00168A00745583 /* ModalFinishPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9A7582A00168A00745583 /* ModalFinishPromptView.swift */; };
 		42CDB44429FACF8C00C8AD6F /* HistoryJournalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDB44329FACF8C00C8AD6F /* HistoryJournalCardView.swift */; };
 		42E6A56B2A0111970008BFF1 /* testSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A56A2A0111970008BFF1 /* testSidebar.swift */; };
+		42E6A5782A039BD80008BFF1 /* fragmentsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A5762A039BD80008BFF1 /* fragmentsDataModel.xcdatamodeld */; };
 		67B0B82629FA5ACC003A982F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0B82529FA5ACC003A982F /* OnboardingView.swift */; };
 		67B0B82C29FB5CD3003A982F /* AssesmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0B82B29FB5CD3003A982F /* AssesmentView.swift */; };
 		67B0B83229FED7BE003A982F /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0B83129FED7BE003A982F /* ProfileEditView.swift */; };
@@ -51,7 +52,6 @@
 		8B7572822A02D84600055090 /* FreeWriteJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7572812A02D84600055090 /* FreeWriteJournalView.swift */; };
 		8B7572842A02D86700055090 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7572832A02D86700055090 /* CanvasView.swift */; };
 		8B7572862A02E29000055090 /* SelfAssessmentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7572852A02E29000055090 /* SelfAssessmentResult.swift */; };
-		8B7572882A0395AB00055090 /* NumberingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7572872A0395AB00055090 /* NumberingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +59,7 @@
 		42C9A7582A00168A00745583 /* ModalFinishPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalFinishPromptView.swift; sourceTree = "<group>"; };
 		42CDB44329FACF8C00C8AD6F /* HistoryJournalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryJournalCardView.swift; sourceTree = "<group>"; };
 		42E6A56A2A0111970008BFF1 /* testSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSidebar.swift; sourceTree = "<group>"; };
+		42E6A5772A039BD80008BFF1 /* fragmentsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fragmentsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		67B0B82529FA5ACC003A982F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		67B0B82B29FB5CD3003A982F /* AssesmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentView.swift; sourceTree = "<group>"; };
 		67B0B83129FED7BE003A982F /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -236,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5BFBBD29F28FCC002A2526 /* CoreDataManager.swift */,
+				42E6A5762A039BD80008BFF1 /* fragmentsDataModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -346,7 +348,6 @@
 				8B75726F2A026E8900055090 /* NewSidebarTest.swift */,
 				8B5BFBE229F2C967002A2526 /* PromptComponent.swift */,
 				8B7572852A02E29000055090 /* SelfAssessmentResult.swift */,
-				8B7572872A0395AB00055090 /* NumberingPage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,7 +381,6 @@
 		8B7572732A02A67A00055090 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				8B5BFBD729F2C6BD002A2526 /* ViewModels */,
 				8B7572742A02A73200055090 /* Models */,
 				8B7572752A02A73C00055090 /* Presenters */,
 			);
@@ -562,7 +562,7 @@
 				8B75726C2A02528100055090 /* MultipleChoices.swift in Sources */,
 				8B63CE5E29F9530200012A38 /* MainJournalCardView.swift in Sources */,
 				42E6A56B2A0111970008BFF1 /* testSidebar.swift in Sources */,
-				8B7572882A0395AB00055090 /* NumberingPage.swift in Sources */,
+				42E6A5782A039BD80008BFF1 /* fragmentsDataModel.xcdatamodeld in Sources */,
 				8B5BFBD429F29342002A2526 /* Dummy.swift in Sources */,
 				42C9A7572A00161500745583 /* FontSystem.swift in Sources */,
 				8B63CE6729F9919C00012A38 /* ButtonMainJournalView.swift in Sources */,
@@ -819,6 +819,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		42E6A5762A039BD80008BFF1 /* fragmentsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42E6A5772A039BD80008BFF1 /* fragmentsDataModel.xcdatamodel */,
+			);
+			currentVersion = 42E6A5772A039BD80008BFF1 /* fragmentsDataModel.xcdatamodel */;
+			path = fragmentsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B5BFB6029EFE370002A2526 /* Project object */;
 }
